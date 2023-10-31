@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucursales Mashini
+    
+    </title>
+    <style>
+    @media (min-width: 576px) {
+    body {
+        /* margin: 0; */
+        margin-left: 12em;
+        margin-right: 12em;
+        font-family: helvetica;
+    }
+    h1 {
+      background-color: blue;
+      height: 2em;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      display: flex;
+      margin-bottom: 0;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        "main main main";
+        grid-template-columns: auto 1fr;
+    }
+    main {
+        grid-area: main;
+        flex-grow: 1;
+        padding-top: 2em;
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        height: 65em;
+        background-size: cover;
+        background-color: yellow;
+        padding-bottom: 2em;
+    }
+    .parque {
+        flex-direction: column;
+        display: flex;
+        background-color: white;
+        margin: 0;    
+        /* align-items: center;  */
+        border-radius: 5%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        height: 29em;
+        margin-top: 2em;
+    }   
+    .parque img {
+        width: 100%; 
+        margin-top: 0;
+        /* border-top-left-radius: 10px; 
+        border-top-right-radius: 10px; */
+        border-radius: 5%;
+    }   
+    .coleccion {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 50px;
+        height: 53em;
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+        justify-content: center;
+    }
+    .tituloparque h2 {
+        margin-top: 1em;
+        font-size: medium;
+        padding-bottom: 0.8em;
+
+    }   
+    .tituloparque{
+        align-items: center;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }   
+    .parque p {
+        margin-top: 0;
+        margin-bottom: 0.7em;
+        font-size: small;
+        margin-left: 1em;
+    }   
+    .parque button {
+        width: 32%;
+        color: white;
+        background-color: #131313;
+        margin-top: 0.8em;
+        height: 2em;
+        border-radius: 7px;
+    }   
+  }  
+
+/* version mobile */
+
+  @media (max-width: 576px) {
+    body {
+        /* margin: 0; */
+        margin-left: 1em;
+        margin-right: 1em;
+        font-family: helvetica;
+    }
+    h1 {
+      background-color: blue;
+      height: 2em;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      display: flex;
+      margin-bottom: 0;
+      font-size: medium;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        "main";
+        grid-template-columns: auto 1fr;
+    }
+    main {
+        grid-area: main;
+        flex-grow: 1;
+        padding-top: 1em;
+        display: flex; 
+        /* flex-wrap: wrap;  */
+        /* justify-content: space-between;  */
+        height: 190em;
+        background-size: cover;
+        background-color: yellow;
+        padding-bottom: 2em;
+  
+    }
+    .parque {
+        flex-direction: column;
+        display: flex;
+        background-color: white;
+        /* margin: 0;     */
+        /* align-items: center;  */
+        border-radius: 5%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        height: 29em;
+        margin-top: 1em;
+    }   
+    .parque img {
+        width: 100%; 
+        margin-top: 0;
+        /* border-top-left-radius: 10px; 
+        border-top-right-radius: 10px; */
+        border-radius: 5%;
+    }   
+    .coleccion {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 2em;
+        height: 53em;
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+        justify-content: center;
+    }
+    .tituloparque h2 {
+        margin-top: 1em;
+        font-size: medium;
+        padding-bottom: 0.8em;
+
+    }   
+    .tituloparque{
+        align-items: center;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }   
+    .parque p {
+        margin-top: 0;
+        margin-bottom: 0.7em;
+        font-size: small;
+        margin-left: 1em;
+    }   
+    .parque button {
+        width: 32%;
+        color: white;
+        background-color: #131313;
+        margin-top: 0.8em;
+        height: 2em;
+        border-radius: 7px;
+    }   
+  }  
+    </style>
+</head>
+<body>
+  <h1><b>Sucursales en Región Metropolitana</b></h1>
+     <main>
+      <div class="coleccion" id="enlace-coleccion">
+          <div class="parque">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
+              alt="torresdelpaine"
+              class="imagen-bn"
+            />
+            <div class="tituloparque">
+              <h2>Mashini Santiago</h2>
+            </div>
+            <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
+            <p><b>Teléfono:</b> +569 5792 7140</p> 
+            <p><b>Correo:</b> sandiego@mashini.cl</p> 
+            <p><b>Horarios:</b></p> 
+            <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
+            <p>Sábados de 10:00 a 15:00 hrs</p>
+            <p>Domingos y feriados cerrados</p>
+            
+          </div>
+          <div class="parque">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
+              alt="torresdelpaine"
+              class="imagen-bn"
+            />
+            <div class="tituloparque">
+              <h2>Mashini Santiago</h2>
+            </div>
+            <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
+            <p><b>Teléfono:</b> +569 5792 7140</p> 
+            <p><b>Correo:</b> sandiego@mashini.cl</p> 
+            <p><b>Horarios:</b></p> 
+            <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
+            <p>Sábados de 10:00 a 15:00 hrs</p>
+            <p>Domingos y feriados cerrados</p>
+            
+          </div><div class="parque">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
+              alt="torresdelpaine"
+              class="imagen-bn"
+            />
+            <div class="tituloparque">
+              <h2>Mashini Santiago</h2>
+            </div>
+            <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
+            <p><b>Teléfono:</b> +569 5792 7140</p> 
+            <p><b>Correo:</b> sandiego@mashini.cl</p> 
+            <p><b>Horarios:</b></p> 
+            <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
+            <p>Sábados de 10:00 a 15:00 hrs</p>
+            <p>Domingos y feriados cerrados</p>
+            
+          </div><div class="parque">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
+              alt="torresdelpaine"
+              class="imagen-bn"
+            />
+            <div class="tituloparque">
+              <h2>Mashini Santiago</h2>
+            </div>
+            <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
+            <p><b>Teléfono:</b> +569 5792 7140</p> 
+            <p><b>Correo:</b> sandiego@mashini.cl</p> 
+            <p><b>Horarios:</b></p> 
+            <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
+            <p>Sábados de 10:00 a 15:00 hrs</p>
+            <p>Domingos y feriados cerrados</p>
+            
+          </div><div class="parque">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
+              alt="torresdelpaine"
+              class="imagen-bn"
+            />
+            <div class="tituloparque">
+              <h2>Mashini Santiago</h2>
+            </div>
+            <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
+            <p><b>Teléfono:</b> +569 5792 7140</p> 
+            <p><b>Correo:</b> sandiego@mashini.cl</p> 
+            <p><b>Horarios:</b></p> 
+            <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
+            <p>Sábados de 10:00 a 15:00 hrs</p>
+            <p>Domingos y feriados cerrados</p>
+            
+          </div><div class="parque">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
+              alt="torresdelpaine"
+              class="imagen-bn"
+            />
+            <div class="tituloparque">
+              <h2>Mashini Santiago</h2>
+            </div>
+            <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
+            <p><b>Teléfono:</b> +569 5792 7140</p> 
+            <p><b>Correo:</b> sandiego@mashini.cl</p> 
+            <p><b>Horarios:</b></p> 
+            <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
+            <p>Sábados de 10:00 a 15:00 hrs</p>
+            <p>Domingos y feriados cerrados</p>
+            
+          </div>
+        </div>
+      </main>
+      <h1><b>Sucursales en Regiones</b></h1>
+      <main>
+        <div class="coleccion" id="enlace-coleccion">
+            <div class="parque">
+              <img
+                src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
+                alt="torresdelpaine"
+                class="imagen-bn"
+              />
+              <div class="tituloparque">
+                <h2>Mashini Santiago</h2>
+              </div>
+              <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
+              <p><b>Teléfono:</b> +569 5792 7140</p> 
+              <p><b>Correo:</b> sandiego@mashini.cl</p> 
+              <p><b>Horarios:</b></p> 
+              <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
+              <p>Sábados de 10:00 a 15:00 hrs</p>
+              <p>Domingos y feriados cerrados</p>
+              
+            </div>
+            <div class="parque">
+              <img
+                src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
+                alt="torresdelpaine"
+                class="imagen-bn"
+              />
+              <div class="tituloparque">
+                <h2>Mashini Santiago</h2>
+              </div>
+              <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
+              <p><b>Teléfono:</b> +569 5792 7140</p> 
+              <p><b>Correo:</b> sandiego@mashini.cl</p> 
+              <p><b>Horarios:</b></p> 
+              <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
+              <p>Sábados de 10:00 a 15:00 hrs</p>
+              <p>Domingos y feriados cerrados</p>
+              
+            </div><div class="parque">
+              <img
+                src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
+                alt="torresdelpaine"
+                class="imagen-bn"
+              />
+              <div class="tituloparque">
+                <h2>Mashini Santiago</h2>
+              </div>
+              <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
+              <p><b>Teléfono:</b> +569 5792 7140</p> 
+              <p><b>Correo:</b> sandiego@mashini.cl</p> 
+              <p><b>Horarios:</b></p> 
+              <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
+              <p>Sábados de 10:00 a 15:00 hrs</p>
+              <p>Domingos y feriados cerrados</p>
+              
+            </div><div class="parque">
+              <img
+                src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
+                alt="torresdelpaine"
+                class="imagen-bn"
+              />
+              <div class="tituloparque">
+                <h2>Mashini Santiago</h2>
+              </div>
+              <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
+              <p><b>Teléfono:</b> +569 5792 7140</p> 
+              <p><b>Correo:</b> sandiego@mashini.cl</p> 
+              <p><b>Horarios:</b></p> 
+              <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
+              <p>Sábados de 10:00 a 15:00 hrs</p>
+              <p>Domingos y feriados cerrados</p>
+              
+            </div><div class="parque">
+              <img
+                src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
+                alt="torresdelpaine"
+                class="imagen-bn"
+              />
+              <div class="tituloparque">
+                <h2>Mashini Santiago</h2>
+              </div>
+              <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
+              <p><b>Teléfono:</b> +569 5792 7140</p> 
+              <p><b>Correo:</b> sandiego@mashini.cl</p> 
+              <p><b>Horarios:</b></p> 
+              <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
+              <p>Sábados de 10:00 a 15:00 hrs</p>
+              <p>Domingos y feriados cerrados</p>
+              
+            </div><div class="parque">
+              <img
+                src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
+                alt="torresdelpaine"
+                class="imagen-bn"
+              />
+              <div class="tituloparque">
+                <h2>Mashini Santiago</h2>
+              </div>
+              <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
+              <p><b>Teléfono:</b> +569 5792 7140</p> 
+              <p><b>Correo:</b> sandiego@mashini.cl</p> 
+              <p><b>Horarios:</b></p> 
+              <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
+              <p>Sábados de 10:00 a 15:00 hrs</p>
+              <p>Domingos y feriados cerrados</p>
+              
+            </div>
+          </div>
+        </main>
+
+</body>
+</html>

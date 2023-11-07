@@ -26,7 +26,8 @@
     .grid-container {
         display: grid;
         grid-template-areas:
-        "main main main";
+        "main main main"
+        "aside aside aside";
         grid-template-columns: auto 1fr;
     }
     main {
@@ -36,9 +37,21 @@
         display: flex; 
         flex-wrap: wrap; 
         justify-content: space-between; 
-        height: 65em;
+        height: 100em;
         background-size: cover;
         background-color: yellow;
+        padding-bottom: 2em;
+    }
+    aside {
+        grid-area: main;
+        flex-grow: 1;
+        padding-top: 2em;
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        height: 66em;
+        background-size: cover;
+        background-color: greenyellow;
         padding-bottom: 2em;
     }
     .parque {
@@ -119,7 +132,8 @@
     .grid-container {
         display: grid;
         grid-template-areas:
-        "main";
+        "main"
+        "aside";
         grid-template-columns: auto 1fr;
     }
     main {
@@ -129,9 +143,22 @@
         display: flex; 
         /* flex-wrap: wrap;  */
         /* justify-content: space-between;  */
-        height: 190em;
+        height: 287em;
         background-size: cover;
         background-color: yellow;
+        padding-bottom: 2em;
+  
+    }
+    aside {
+        grid-area: main;
+        flex-grow: 1;
+        padding-top: 1em;
+        display: flex; 
+        /* flex-wrap: wrap;  */
+        /* justify-content: space-between;  */
+        height: 128em;
+        background-size: cover;
+        background-color: greenyellow;
         padding-bottom: 2em;
   
     }
@@ -198,8 +225,8 @@
       <div class="coleccion" id="enlace-coleccion">
           <div class="parque">
             <img
-              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-              alt="torresdelpaine"
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/gral_mackenna.jpg?v=1699390137"
+              alt="mashini gral mackenna"
               class="imagen-bn"
             />
             <div class="tituloparque">
@@ -216,8 +243,8 @@
           </div>
           <div class="parque">
             <img
-              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-              alt="torresdelpaine"
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/san_diego_21564ffc-5136-4556-8b0e-6668200b4bbf.jpg?v=1699390234"
+              alt="mashini san diego"
               class="imagen-bn"
             />
             <div class="tituloparque">
@@ -233,8 +260,8 @@
             
           </div><div class="parque">
             <img
-              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-              alt="torresdelpaine"
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/alameda_c26ede16-21f4-4994-85ed-7e6f050dc68b.jpg?v=1699390282"
+              alt="mashini alameda"
               class="imagen-bn"
             />
             <div class="tituloparque">
@@ -250,8 +277,8 @@
             
           </div><div class="parque">
             <img
-              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-              alt="torresdelpaine"
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/stgo_centro.jpg?v=1699390331"
+              alt="mashini stgo centro"
               class="imagen-bn"
             />
             <div class="tituloparque">
@@ -267,8 +294,8 @@
             
           </div><div class="parque">
             <img
-              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-              alt="torresdelpaine"
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/maipu_a136318d-adc2-4c8d-bfb6-e6f523f5c968.jpg?v=1699390368"
+              alt="mashini maipu"
               class="imagen-bn"
             />
             <div class="tituloparque">
@@ -282,8 +309,8 @@
             
           </div><div class="parque">
             <img
-              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-              alt="torresdelpaine"
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/oulet_easton.jpg?v=1699390403"
+              alt="mashini oulet easton"
               class="imagen-bn"
             />
             <div class="tituloparque">
@@ -298,8 +325,8 @@
           </div>
           <div class="parque">
             <img
-              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-              alt="torresdelpaine"
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/la_fabrica.jpg?v=1699390462"
+              alt="mashini la fabrica"
               class="imagen-bn"
             />
             <div class="tituloparque">
@@ -314,8 +341,8 @@
           </div>
           <div class="parque">
             <img
-              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-              alt="torresdelpaine"
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/buenaventura.jpg?v=1699390499"
+              alt="mashini mall buenaventura"
               class="imagen-bn"
             />
             <div class="tituloparque">
@@ -330,8 +357,8 @@
           </div>
           <div class="parque">
             <img
-              src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-              alt="torresdelpaine"
+              src="https://cdn.shopify.com/s/files/1/2394/4001/files/oulet_la_florida.jpg?v=1699390589"
+              alt="mashini la florida"
               class="imagen-bn"
             />
             <div class="tituloparque">
@@ -347,12 +374,12 @@
         </div>
       </main>
       <h1><b>Sucursales en Regiones</b></h1>
-      <main>
+      <aside>
         <div class="coleccion" id="enlace-coleccion">
             <div class="parque">
               <img
-                src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-                alt="torresdelpaine"
+                src="https://cdn.shopify.com/s/files/1/2394/4001/files/antofagasta_aa7466fc-2aac-4d99-861a-58eb51db174f.jpg?v=1699390620"
+                alt="mashini antofagasta"
                 class="imagen-bn"
               />
               <div class="tituloparque">
@@ -367,8 +394,8 @@
             </div>
             <div class="parque">
               <img
-                src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-                alt="torresdelpaine"
+                src="https://cdn.shopify.com/s/files/1/2394/4001/files/curauma.jpg?v=1699390656"
+                alt="mashini mall curauma"
                 class="imagen-bn"
               />
               <div class="tituloparque">
@@ -378,78 +405,43 @@
               <p><b>Teléfono:</b> +56963088948</p> 
               <p><b>Correo:</b> curauma@mashini.cl</p> 
               <p><b>Horarios:</b></p> 
-              <p>Lunes a Domingo de 10:00 a 20:00 hrs</p>>
+              <p>Lunes a Domingo de 10:00 a 20:00 hrs</p>
               
             </div><div class="parque">
               <img
-                src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-                alt="torresdelpaine"
+                src="https://cdn.shopify.com/s/files/1/2394/4001/files/rancagua_094e6060-a1e1-4714-9a46-954cfdd4bb11.jpg?v=1699390690"
+                alt="mashini rancagua"
                 class="imagen-bn"
               />
               <div class="tituloparque">
-                <h2>Mashini Viña Outlet Park</h2>
+                <h2>Mashini Rancagua</h2>
               </div>
-              <p><b>Dirección:</b> Camino Internacional 2440 Local Nº LC75, Reñaca Viña del Mar</p> 
-              <p><b>Teléfono:</b> +56981883010</p> 
-              <p><b>Correo:</b> outletpark@mashini.cl</p> 
+              <p><b>Dirección:</b> Av. Einstein 280, Mall Plaza América</p> 
+              <p><b>Teléfono:</b> +56977244351</p> 
+              <p><b>Correo:</b> rancagua@mashini.cl</p> 
               <p><b>Horarios:</b></p> 
-              <p>Lunes a Sábado de 10:00 a 19:30 hrs</p>
-              <p>Domingos y feriados de 10:00 a 19:00 hrs</p>
+              <p>Lunes a Domingo de 11:00 a 20:00 hrs</p>
               
             </div><div class="parque">
               <img
-                src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-                alt="torresdelpaine"
+                src="https://cdn.shopify.com/s/files/1/2394/4001/files/concepcion_36bc4c24-c808-402c-843b-8d1ea0994883.jpg?v=1699390723"
+                alt="mashini concepcion"
                 class="imagen-bn"
               />
               <div class="tituloparque">
-                <h2>Mashini Santiago</h2>
+                <h2>Mashini Concepción</h2>
               </div>
-              <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
-              <p><b>Teléfono:</b> +569 5792 7140</p> 
-              <p><b>Correo:</b> sandiego@mashini.cl</p> 
+              <p><b>Dirección:</b> Anibal Pinto 522</p> 
+              <p><b>Teléfono:</b> +56957906370</p> 
+              <p><b>Correo:</b> concepcion@mashini.cl</p> 
               <p><b>Horarios:</b></p> 
-              <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
-              <p>Sábados de 10:00 a 15:00 hrs</p>
-              <p>Domingos y feriados cerrados</p>
-              
-            </div><div class="parque">
-              <img
-                src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-                alt="torresdelpaine"
-                class="imagen-bn"
-              />
-              <div class="tituloparque">
-                <h2>Mashini Santiago</h2>
-              </div>
-              <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
-              <p><b>Teléfono:</b> +569 5792 7140</p> 
-              <p><b>Correo:</b> sandiego@mashini.cl</p> 
-              <p><b>Horarios:</b></p> 
-              <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
-              <p>Sábados de 10:00 a 15:00 hrs</p>
-              <p>Domingos y feriados cerrados</p>
-              
-            </div><div class="parque">
-              <img
-                src="https://cdn.shopify.com/s/files/1/2394/4001/files/sucursal.jpg?v=1698776182"
-                alt="torresdelpaine"
-                class="imagen-bn"
-              />
-              <div class="tituloparque">
-                <h2>Mashini Santiago</h2>
-              </div>
-              <p><b>Dirección:</b> San Diego 1877, Santiago Centro.</p> 
-              <p><b>Teléfono:</b> +569 5792 7140</p> 
-              <p><b>Correo:</b> sandiego@mashini.cl</p> 
-              <p><b>Horarios:</b></p> 
-              <p>Lunes a viernes de 09:30 a 15:00 hrs / 15:30 a 18:00 hrs</p>
+              <p>Lunes a viernes de 10:00 a 19:00 hrs</p>
               <p>Sábados de 10:00 a 15:00 hrs</p>
               <p>Domingos y feriados cerrados</p>
               
             </div>
           </div>
-        </main>
+        </aside>
 
 </body>
 </html>
